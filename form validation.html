@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function geeek()
+{
+var name=document.getElementbyld("fname");
+var address=document.getElementbyld("address");
+var sub=document.getElementbyld("SUBJECT);
+var radio=document.getElementbyldName("yesno");
+var formValid=false;
+if(name.value==""||name.value==null)
+{
+window.alert("Enter valid address");
+return false;
+}
+if(sub.selectedIndex=="")
+{
+window.alert("Enter valid subject");
+return false;
+}
+var i=0;
+while(!formValid && i<radios.length
+{
+if(radios[i].checked)
+formValid=true;
+i++;
+}
+if(!formValid)alert("Please enter your gender");
+return formValid;
+return true;
+}
+</script>
+</head>
+<body>
+<form name="stud" onsubmit="return geek()">
+<h2>REGISTRATION FORM</h2>
+Name:&nbsp;<input type="text" name="name" id="fname"><br><br>
+Address<br>&nbsp;<textarea name="address" type="text" rows="5" cols="20" id="address"></textarea><br><br>
+Gender:<input type="radio" id="1" name="yesno" value="1"/>male<input type="radio" id="1" name="yesno" value="2"/>female<br><br>
+Qualification:<select name="subject" id ="SUBJECT">
+<option value="s">MCA</option>
+<option value="s">BCA</option>
+<option value="s">MBA</option>
+<option value="s">BBA</option>
+<option value="s">BTECH</option>
+<option value="s">MTECH</option>
+</select><br><br>
+<input type="submit" value="confirm">
+</form>
+</body>
+</html>

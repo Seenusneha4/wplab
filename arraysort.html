@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<title>find the largest and smallest number of value in an array php function</title>
+</head>
+<body>
+<h1>largest of smallest number in an array</h1>
+enter the number seperated by commas;
+eg(1,10);
+<br /><br />
+<form method="POST">
+<input type="text" name="number"/>
+<button type="submit">check</button>
+</form>
+</body>
+</html>
+<? php
+if($_post)
+{
+$number=$_post['number'];
+$numarray='explored'[',',$number];
+$largest=$numarray[0];
+$smallest=$numarray[0];
+for each($numarray as $num]
+{
+if($num>$largest)
+{
+$largest=$num;
+}
+else if($num<$smallest)
+{
+$smallest=$num;
+}
+}
+echo"largrst number is $num :$largest;
+echo"smallest number is $num :$smallest;
+}
+?>
+
